@@ -120,7 +120,7 @@ namespace Projet
                             {
                                 Console.WriteLine("Veuillez taper 1 ou 2");
                             }
-
+                        }
 
                             Console.Clear();
                             Console.WriteLine("Le début du combat va commencer, voici les explications :"); // Start explication 
@@ -189,7 +189,7 @@ namespace Projet
                                 }
 
                             }
-                        }
+                       
                     }
 
 
@@ -238,7 +238,7 @@ namespace Projet
                     {
                         Console.WriteLine("Votre chance a porté es fruits !");
                         Console.ReadKey();
-                        Console.WriteLine("Une boule de feu a touché Manoroth il a perdus 15 pv !");
+                        Console.WriteLine("Une boule de feu a touché Manoroth il a perdu 15 pv !");
                         Console.ReadKey();
                         vieManoroth = vieManoroth - 15;
 
@@ -285,26 +285,24 @@ namespace Projet
                         else
                         {
                             Console.WriteLine("Egalité personne n'est blessé");
+                            Console.ReadKey();
+
                         }
+
+
+
 
                         if (vieGrommash <= 0)
                         {
-                            Console.WriteLine("Vous êtes mort, le combat que vousavez lancé pour votre liberté est finit");
+                            Console.WriteLine("Vous êtes mort, le combat que vous avez lancé pour votre liberté est finit");
                             Console.ReadKey();
                             Console.WriteLine("Votre faiblesse conduiras à la mort de millions d'innocents");
                             Console.ReadKey();
                             return;
-
-
-
-
-
                         }
 
-
-
                         else
-                        {
+                    {
                             Console.WriteLine("Manoroth est vincu vous vous redressez dans un élan de gloir et d'euphorie");
                             Console.ReadKey();
                             Console.WriteLine("Vous vous retournez et vous voyez manorth exploser eul la chance peut vous sauvez");
@@ -342,9 +340,13 @@ namespace Projet
 
                         }
 
+
+
                     }
+                    
+                    
 
-
+                    
                 }
                 else
                 {
